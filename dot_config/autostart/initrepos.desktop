@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=InitRepos
+GenericName=Initialize repositories
+Comment=Initialize repositories
+Exec=/home/deepstar/bin/sva-init-repos.sh
+Terminal=true
+Type=Application
+X-GNOME-Autostart-enabled=true

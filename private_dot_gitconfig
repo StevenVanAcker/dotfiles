@@ -1,0 +1,16 @@
+[user]
+        name = Steven Van Acker
+        email = steven@singularity.be
+[core]
+        editor = vim
+	compression = 1
+[merge]
+        tool = vimdiff
+[alias]
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false
+[push]
+        default = simple
