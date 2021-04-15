@@ -1,0 +1,26 @@
+Host *.labs.overthewire.org
+  SendEnv WECHALLTOKEN
+  SendEnv WECHALLUSER
+  SendEnv OTWUSERDIR
+
+Host *
+  ForwardX11Timeout 7d
+  ServerAliveInterval 30
+  AddKeysToAgent yes
+
+# proxmox: ssh steven@leela
+Host leela
+    HostName otw.cracksucht.de
+    Port 10111
+    LocalForward 8006 127.0.0.1:8006
+
+# gitlab: ssh root@gitlab.otw.local
+Host gitlab.otw.local
+     HostName otw.cracksucht.de
+     Port 4444
+     LocalForward 4444 127.0.0.1:80
+
+Host draco
+    HostName otw.cracksucht.de
+    Port 9000
+
