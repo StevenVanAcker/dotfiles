@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=UserAutoStart
+GenericName=User autostart script
+Comment=User autostart script
+Exec=/home/deepstar/bin/autostart.sh
+Terminal=true
+Type=Application
+X-GNOME-Autostart-enabled=true
