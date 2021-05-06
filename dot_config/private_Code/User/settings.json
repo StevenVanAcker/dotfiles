@@ -1,0 +1,72 @@
+{
+    "pythonTestExplorer.testFramework": "pytest",
+    "editor.renderWhitespace": "all",
+    "editor.formatOnSave": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "autopep8",
+    "python.formatting.yapfArgs": [
+        "--style",
+        "${workspaceRoot}/setup.cfg"
+    ],
+    "saveAndRun": {
+        "commands": [
+            {
+                "match": "\\.py$",
+                "cmd": "cd $(echo \"${workspaceFolder}\" | sed 's/://g') && export PYTHONPATH=$PWD && isort \"${file}\" && yapf -r -i \"${file}\"",
+                "useShortcut": false,
+                "silent": false
+            }
+        ]
+    },
+    "python.linting.flake8Args": [
+        "--max-line-length=120"
+    ],
+    "git.autofetch": true,
+    "cSpell.enableFiletypes": [
+        "!json",
+        "!python"
+    ],
+    "cSpell.userWords": [
+        "APKs",
+        "EACS",
+        "Gothenburg",
+        "PKCS",
+        "RDNs",
+        "SEMS",
+        "SPAPI",
+        "SWDL",
+        "TSPKI",
+        "VGCS",
+        "accesspoint",
+        "backoffice",
+        "ciphertext",
+        "ciphertexts",
+        "dnsmasq",
+        "filesize",
+        "hexdump",
+        "hotspot",
+        "keystream",
+        "logcat",
+        "pingable",
+        "sem",
+        "semupdateservice",
+        "testfile",
+        "unencrypted",
+        "volvotrucks",
+        "webserver",
+        "zipfile"
+    ],
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4  
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
+}
