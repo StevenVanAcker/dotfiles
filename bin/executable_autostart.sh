@@ -2,6 +2,7 @@
 
 # This runs each time we login
 (
+~/bin/init-keyboard.sh
 ~/bin/init-dotfiles.sh
 ~/bin/init-workstation.sh
 ~/bin/init-repos.sh
