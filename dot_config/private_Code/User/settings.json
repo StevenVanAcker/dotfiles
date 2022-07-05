@@ -27,38 +27,43 @@
         "!python"
     ],
     "cSpell.userWords": [
-        "APKs",
-        "EACS",
-        "Gothenburg",
-        "PKCS",
-        "RDNs",
-        "SEMS",
-        "SPAPI",
-        "SWDL",
-        "TSPKI",
-        "VGCS",
         "accesspoint",
+        "APKs",
+        "Asta",
         "backoffice",
         "ciphertext",
         "ciphertexts",
         "dnsmasq",
+        "EACS",
+        "Expericom",
         "filesize",
+        "Gothenburg",
         "hexdump",
         "hotspot",
         "keystream",
         "logcat",
+        "Offboard",
         "pingable",
+        "PKCS",
+        "portscans",
+        "RDNs",
         "sem",
+        "SEMS",
         "semupdateservice",
+        "SPAPI",
+        "SWDL",
         "testfile",
+        "TSPKI",
         "unencrypted",
+        "VGCS",
         "volvotrucks",
         "webserver",
+        "Westermo",
         "zipfile"
     ],
     "[python]": {
         "editor.insertSpaces": true,
-        "editor.tabSize": 4  
+        "editor.tabSize": 4
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -74,5 +79,6 @@
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+    "cmake.configureOnOpen": true
 }
