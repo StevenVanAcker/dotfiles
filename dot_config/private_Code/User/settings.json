@@ -13,33 +13,38 @@
         "!python"
     ],
     "cSpell.userWords": [
-        "APKs",
-        "EACS",
-        "Gothenburg",
-        "PKCS",
-        "RDNs",
-        "SEMS",
-        "SPAPI",
-        "SWDL",
-        "TSPKI",
-        "VGCS",
         "accesspoint",
+        "APKs",
+        "Asta",
         "backoffice",
         "ciphertext",
         "ciphertexts",
         "dnsmasq",
+        "EACS",
+        "Expericom",
         "filesize",
+        "Gothenburg",
         "hexdump",
         "hotspot",
         "keystream",
         "logcat",
+        "Offboard",
         "pingable",
+        "PKCS",
+        "portscans",
+        "RDNs",
         "sem",
+        "SEMS",
         "semupdateservice",
+        "SPAPI",
+        "SWDL",
         "testfile",
+        "TSPKI",
         "unencrypted",
+        "VGCS",
         "volvotrucks",
         "webserver",
+        "Westermo",
         "zipfile"
     ],
     "[python]": {
@@ -47,7 +52,19 @@
         "editor.tabSize": 4
     },
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
@@ -62,5 +79,6 @@
         "**/.factorypath": true
     },
     "python.defaultInterpreterPath": "/home/deepstar/Projects.git/workshop-worksheets/spoofing/geoacumen-country/x/bin/python3",
-    "window.zoomLevel": -1
+    "window.zoomLevel": -1,
+    "cmake.configureOnOpen": true
 }
