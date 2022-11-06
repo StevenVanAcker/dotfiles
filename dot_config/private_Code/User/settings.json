@@ -4,20 +4,6 @@
     "editor.formatOnSave": true,
     "python.linting.flake8Enabled": true,
     "python.formatting.provider": "autopep8",
-    "python.formatting.yapfArgs": [
-        "--style",
-        "${workspaceRoot}/setup.cfg"
-    ],
-    "saveAndRun": {
-        "commands": [
-            {
-                "match": "\\.py$",
-                "cmd": "cd $(echo \"${workspaceFolder}\" | sed 's/://g') && export PYTHONPATH=$PWD && isort \"${file}\" && yapf -r -i \"${file}\"",
-                "useShortcut": false,
-                "silent": false
-            }
-        ]
-    },
     "python.linting.flake8Args": [
         "--max-line-length=120"
     ],
@@ -58,15 +44,23 @@
     ],
     "[python]": {
         "editor.insertSpaces": true,
-        "editor.tabSize": 4  
+        "editor.tabSize": 4
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ]
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.maxTokenizationLineLength": 2000000,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "python.defaultInterpreterPath": "/home/deepstar/Projects.git/workshop-worksheets/spoofing/geoacumen-country/x/bin/python3",
+    "window.zoomLevel": -1
 }

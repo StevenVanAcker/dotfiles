@@ -1,4 +1,4 @@
-Host *.labs.overthewire.org
+Host *.overthewire.org
   SendEnv WECHALLTOKEN
   SendEnv WECHALLUSER
   SendEnv OTWUSERDIR
@@ -8,54 +8,3 @@ Host *
   ServerAliveInterval 30
   AddKeysToAgent yes
 
-# proxmox: ssh steven@leela
-Host leela
-    HostName otw.cracksucht.de
-    Port 10111
-    LocalForward 8006 127.0.0.1:8006
-	# natas
-	LocalForward 22122 192.168.101.20:22
-
-# gitlab: ssh root@gitlab.otw.local
-Host gitlab.otw.local
-     HostName otw.cracksucht.de
-     Port 4444
-     LocalForward 4444 127.0.0.1:80
-
-Host draco
-    HostName otw.cracksucht.de
-    Port 9000
-
-Host bandit
-    HostName otw.cracksucht.de
-    Port 2220
-Host behemoth
-    HostName otw.cracksucht.de
-    Port 2221
-Host leviathan
-    HostName otw.cracksucht.de
-    Port 2223
-Host manpage
-    HostName otw.cracksucht.de
-    Port 2224
-Host maze
-    HostName otw.cracksucht.de
-    Port 2225
-Host narnia
-    HostName otw.cracksucht.de
-    Port 2226
-Host utumno
-    HostName otw.cracksucht.de
-    Port 2227
-Host vortex
-    HostName otw.cracksucht.de
-    Port 2228
-Host semtex
-    HostName otw.cracksucht.de
-    Port 2229
-Host drifter
-    HostName otw.cracksucht.de
-    Port 2230
-Host krypton
-    HostName otw.cracksucht.de
-    Port 2231
