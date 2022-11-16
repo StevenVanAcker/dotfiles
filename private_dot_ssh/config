@@ -8,3 +8,10 @@ Host *
   ServerAliveInterval 30
   AddKeysToAgent yes
 
+Host azure-jump
+  Hostname segotl0836.srv.volvo.com
+  User a328385
+  ForwardAgent yes
+
+Host 10.131.10.*
+  ProxyCommand ssh -W %h:%p azure-jump
