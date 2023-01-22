@@ -13,5 +13,5 @@ Host azure-jump
   User a328385
   ForwardAgent yes
 
-Host 10.131.10.*
+Host 10.131.*.*
   ProxyCommand ssh -W %h:%p azure-jump
