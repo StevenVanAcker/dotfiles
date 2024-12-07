@@ -1,6 +1,5 @@
 {
   "editor.renderWhitespace": "all",
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "ms-python.black-formatter",
   "black-formatter.args": [
     "--line-length",
@@ -37,8 +36,9 @@
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
-    "markdown": true,
-    "scminput": false
+    "markdown": false,
+    "scminput": false,
+    "python": true
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -53,5 +53,10 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.formatOnSave": true,
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "latex-workshop.formatting.latex": "latexindent"
 }
